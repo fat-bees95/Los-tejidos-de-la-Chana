@@ -1,0 +1,26 @@
+﻿name: Los tejidos de la Chana
+version: 1.0
+description: >
+  Sitio web artesanal para mostrar productos tejidos a mano, incluyendo accesorios,
+  decoración y juguetes. Cada sección cuenta con una galería visual y un formulario de contacto.
+author: Chana
+structure:
+  root:
+    - index.html
+    - Accesorios_Chana3.1.html
+    - Decoración_Chana3.1.html
+    - Juguetes_Chana3.1.html
+    - gracias.html
+    - estilos.css
+    - Modal_Chana3.1.js
+    - README.md
+    - Productos/
+folders:
+  Productos:
+    - Accesorios/
+    - Decoración/
+    - Juguetes/
+dependencies:
+  - FontAwesome 6.5.0 CDN
+  - modal.js (custom script)
+license: Propietario - Todos los derechos reservados

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Los tejidos de la Chana</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="profile-pic">
+      <img src="./Chana2.jpg" alt="Foto de perfil" />
+    </div>
+    <div class="intro">
+      <p>Me llamo Alejandra, aunque algunos familiares me dicen Chana.</p>
+      <p>Me encantan los tejidos, especialmente los muñecos del tipo "amigurumis".</p>
+      <p>He hecho varios trabajos de estos y quiero llegar a más gente que pueda querer adquirir uno de su gusto.</p>
+      <p>Los materiales que he usado son lana, cordón, trapillo, totora, hilo de bordar.</p>
+      <p>Si te interesan mis trabajos podés contactarme y podremos acordar precio y plazo de entrega.</p>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="sidebar">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="Accesorios_Chana3.1.html" target="_blank">Accesorios</a></li>
+        <li><a href="Decoración_Chana3.1.html" target="_blank">Decoración</a></li>
+        <li><a href="Juguetes_Chana3.1.html" target="_blank">Juguetes</a></li>
+      </ul>
+      <div class="thumbnails">
+        <img src="Productos/Juguetes/Owl.jpg" alt="Amigurumis varios" onclick="showProduct('Amigurumis varios')">
+        <img src="Productos/Decoración/IMG-20250421-WA0004.jpg" alt="Canasto con asas" onclick="showProduct('Canasto con asas')">
+        <img src="Productos/Decoración/IMG-20250422-WA0034.jpg" alt="Alfombra" onclick="showProduct('Alfombra')">
+        <img src="Productos/Accesorios/Mochila.jpg" alt="Mochila" onclick="showProduct('Mochila')">
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>Productos destacados</h3>
+      <div class="products" id="productList">
+        <div class="product">🐻 Amigurumi Capibara</div>
+        <div class="product">🧶 Alfombra gato</div>
+        <div class="product">🛏️ Bolsito de mano</div>
+      </div>
+
+      <div class="contact">
+        <h3>Contacto</h3>
+        <form action="https://formsubmit.co/bejarano67@gmail.com" method="POST">
+  	  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+  	  <input type="text" name="_honey" style="display:none">
+  	  <input type="hidden" name="_captcha" value="false">
+
+    	   <label for="nombre">Tu nombre</label>
+ 	   <input id="nombre" type="text" name="nombre" required />
+
+          <label for="email">Tu email</label>
+          <input id="email" type="email" name="email" required />
+
+         <label for="mensaje">Tu mensaje</label>
+         <textarea id="mensaje" name="mensaje" required></textarea>
+
+         <button type="submit">Enviar mensaje</button>
+       </form>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Los tejidos de la Chana — Todos los derechos reservados
+  <p style="font-size: 0.8em;">
+  Este sitio está licenciado bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>.
+  </p>
+
+  </footer>
+
+  <script>
+    function showProduct(name) {
+      alert("Has seleccionado: " + name);
+    }
+  </script>
+</body>
+</html>
