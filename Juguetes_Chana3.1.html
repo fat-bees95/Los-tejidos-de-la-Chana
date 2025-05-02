@@ -15,6 +15,8 @@
     <div class="intro">
       <p>¡Bienvenid@ a la sección de <strong>Juguetes tejidos</strong>! ✨</p>
       <p>Acá encontrarás amigurumis y muñecos únicos hechos con mucho amor.</p>
+      <p>Si te gusta alguno de los que ves, o tenés una idea de un diseño personalizado,</p>
+      <p>podemos comunicarnos para arreglar los detalles.</p>
     </div>
   </header>
 
@@ -32,27 +34,42 @@
       <h3>Muñecos tejidos</h3>
       <div class="products" id="productList">
         <div class="product">
-          <img src="Productos/juguetes/HelloKitty.jpg" alt="HelloKitty" class="modal-img">
-          <p>🧸 Amigurumi  HelloKitty</p>
+          <img src="Productos/juguetes/Abejita.jpg" alt="Abejita" class="modal-img" loading: "lazy">
+          <p>🧸 Amigurumi  Abejita</p>
         </div>
         <div class="product">
-          <img src="Productos/juguetes/Giraffe.jpg" alt="Jiafa" class="modal-img">
-          <p>💤 Jirafa</p>
+          <img src="Productos/juguetes/Capibara.jpg" alt="Capibara" class="modal-img" loading: "lazy">
+          <p>💤 Capibara</p>
         </div>
         <div class="product">
-          <img src="Productos/juguetes/Owl.jpg" alt="Buho" class="modal-img">
+          <img src="Productos/juguetes/Owl.jpg" alt="Buho" class="modal-img" loading: "lazy">
           <p>🐰 Buho</p>
+        </div>
+        <div class="product">
+          <img src="Productos/juguetes/Ovejita.jpg" alt="Ovejita" class="modal-img" loading: "lazy">
+          <p>🐰 Ovejita</p>
         </div>
       </div>
 
       <div class="contact">
         <h3>¿Querés uno?</h3>
-        <form action="gracias.html" method="get">
-          <input type="text" placeholder="Tu nombre" required />
-          <input type="email" placeholder="Tu email" required />
-          <textarea placeholder="¿Qué muñeco te gustó o qué te gustaría que te haga?"></textarea>
-          <button type="submit">Enviar mensaje</button>
-        </form>
+        <form action="https://formsubmit.co/alejandra275@live.com.ar" method="POST">
+  	  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+  	  <input type="text" name="_honey" style="display:none">
+  	  <input type="hidden" name="_captcha" value="false">
+
+    	   <label for="nombre">Tu nombre</label>
+ 	   <input id="nombre" type="text" name="nombre" required />
+
+          <label for="email">Tu email</label>
+          <input id="email" type="email" name="email" required />
+
+         <label for="mensaje">Tu mensaje</label>
+         <textarea id="mensaje" name="mensaje" required></textarea>
+
+         <button type="submit">Enviar mensaje</button>
+       </form>
+
       </div>
     </div>
   </div>
@@ -65,9 +82,8 @@
      <span class="close" onclick="closeModal()">&times;</span>
       <img class="modal-content" id="imgModal">
       <div id="caption"></div>
+  </div>
 
   <script src="modal.js"></script>
-
-  </div>
 </body>
 </html>

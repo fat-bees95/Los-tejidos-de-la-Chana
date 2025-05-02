@@ -30,29 +30,58 @@
 
     <div class="content">
       <h3>Accesorios disponibles</h3>
-      <div class="products" id="productList">
-        <div class="product">
-          <img src="Productos/Accesorios/Mochila.jpg" alt="Mochila tejida" style="width:100%; border-radius: 8px;">
-          <p>🎒 Mochila tejida</p>
-        </div>
-        <div class="product">
-          <img src="Productos/Accesorios/Bolso multicolor.jpg" alt="Bolso multicolor" style="width:100%; border-radius: 8px;">
-          <p>👜 Bolso multicolor</p>
-        </div>
-        <div class="product">
-          <img src="Productos/Accesorios/Bolsito de mano.jpg" alt="Bolsito de mano" style="width:100%; border-radius: 8px;">
-          <p>🧢 Bolsito de mano</p>
-        </div>
+      <div class="products" id="productList"><div class="products">
+  <div class="product">
+    <img src="Productos/Accesorios/Mochila.jpg" alt="Mochila tejida" style="width:100%; border-radius: 8px;">
+    <p>🎒 Mochila tejida</p>
+  </div>
+  <div class="product">
+    <img src="Productos/Accesorios/Bolso multicolor.jpg" alt="Bolso multicolor" style="width:100%; border-radius: 8px;">
+    <p>👜 Bolso multicolor</p>
+  </div>
+  <div class="product">
+    <img src="Productos/Accesorios/Bolsito de mano.jpg" alt="Bolsito de mano" style="width:100%; border-radius: 8px;">
+    <p>🧢 Bolsito de mano</p>
+  </div>
+  <div class="product">
+    <img src="Productos/Accesorios/Cartera de totora.jpg" alt="Cartera de totora" style="width:100%; border-radius: 8px;">
+    <p>🎒 Cartera de totora</p>
+  </div>
+  <div class="product">
+    <img src="Productos/Accesorios/Mochila de totora.jpg" alt="Mochila de totora" style="width:100%; border-radius: 8px;">
+    <p>👜 Mochila de totora</p>
+  </div>
+  <div class="product">
+    <img src="Productos/Accesorios/Mochila de totora-2.jpg" alt="Mochila de totora-2" style="width:100%; border-radius: 8px;">
+    <p>🧢 Mochila de totora-2</p>
+  </div>
+  <div class="product">
+    <img src="Productos/Accesorios/Cartera tejida.jpg" alt="Cartera tejida" style="width:100%; border-radius: 8px;">
+    <p>🧢 Cartera tejida</p>
+  </div>
+</div>
+
       </div>
 
       <div class="contact">
         <h3>¿Te interesa alguno?</h3>
-        <form action="gracias.html" method="get">
-          <input type="text" name="nombre" placeholder="Tu nombre" required />
-          <input type="email" name="email" placeholder="Tu email" required />
-          <textarea name="mensaje" placeholder="Escribí qué producto te interesa o consultá algo..." required></textarea>
-          <button type="submit">Enviar mensaje</button>
-        </form>
+        <form action="https://formsubmit.co/alejandra275@live.com.ar" method="POST">
+  	  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+  	  <input type="text" name="_honey" style="display:none">
+  	  <input type="hidden" name="_captcha" value="false">
+
+    	   <label for="nombre">Tu nombre</label>
+ 	   <input id="nombre" type="text" name="nombre" required />
+
+          <label for="email">Tu email</label>
+          <input id="email" type="email" name="email" required />
+
+         <label for="mensaje">Tu mensaje</label>
+         <textarea id="mensaje" name="mensaje" required></textarea>
+
+         <button type="submit">Enviar mensaje</button>
+       </form>
+
       </div>
     </div>
   </div>
